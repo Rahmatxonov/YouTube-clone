@@ -1,10 +1,10 @@
-import React, { Link } from "react";
+import { NavLink } from "react-router-dom";
 
 const History = () => {
   return (
     <div>
       <h3>NotFoundPage</h3>
-      <Link to="/">Back to Home</Link>
+      <NavLink to="/">Back to Home</NavLink>
     </div>
   );
 };

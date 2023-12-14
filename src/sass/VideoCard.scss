@@ -1,6 +1,88 @@
+// .videosCard {
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   gap: 10px;
+//   padding: 0 20px;
+// }
+// img {
+//   width: 100%;
+//   object-fit: cover;
+// }
+.videoItem {
+  position: relative;
+  width: 100%;
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+}
 .videosCard {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  padding: 0 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+.videoItem {
+  position: relative;
+  width: 100%;
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: 768px) {
+    video {
+      width: 80%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    video {
+      width: 70%;
+    }
+  }
+}
+
+:root {
+  --main-color: #111;
+  --loader-color: #ff0000;
+  --back-color: #ffffff;
+  --time: 3s;
+  --size: 3px;
+}
+
+.loader {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: -245px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  z-index: 100;
+}
+
+.loader__element {
+  height: var(--size);
+  width: 100%;
+  background: var(--back-color);
+}
+
+.loader__element:before {
+  content: "";
+  display: block;
+  background-color: var(--loader-color);
+  height: var(--size);
+  width: 0;
+  animation: getWidth var(--time) ease-in infinite;
+}
+
+@keyframes getWidth {
+  100% {
+    width: 100%;
+  }
 }

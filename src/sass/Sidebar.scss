@@ -1,5 +1,7 @@
 .sidebar {
   flex: 0.2;
+  // position: fixed;
+  // background-color: #fff;
 }
 .sidebar > hr {
   height: 1px;
@@ -7,4 +9,7 @@
   background-color: lightgray;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.active {
+  color: red;
 }
