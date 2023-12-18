@@ -1,3 +1,5 @@
+@import "./mixin.scss";
+
 .header {
   display: flex;
   align-items: center;
@@ -5,7 +7,7 @@
   padding: 20px;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 100;
   background: #ffffff;
   &__left {
     display: flex;
@@ -18,19 +20,33 @@
   &__center {
     display: flex;
     align-items: center;
-    width: 40%;
-    margin-left: 20px;
+    justify-content: space-between;
+    width: 30%;
+    margin-left: 80px;
     border: none;
     background-color: #ebebeb;
-    border-radius: 30px;
-    opacity: 30%;
+    border-radius: 50px;
+    opacity: 60%;
+    margin-right: 150px;
+    @include for-tablet {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    @include for-phone {
+      width: 0;
+      display: none;
+    }
 
     &__input {
-      flex: 1;
+      max-width: 200px;
+      width: 100%;
       border: none !important;
       padding: 10px 23px;
       background-color: #ebebeb;
       border-radius: 30px;
+      @include for-phone {
+        display: none;
+      }
     }
     &__search {
       outline: none;
@@ -44,6 +60,25 @@
     display: flex;
     align-items: center;
     column-gap: 50px;
+    &__video {
+      @include for-tablet {
+        display: none;
+      }
+    }
+    &__menu {
+      @include for-tablet {
+        display: none;
+      }
+    }
+    &__ringtong {
+      @include for-tablet {
+        display: none;
+      }
+    }
+    &__dark {
+      width: 25px;
+      height: 25px;
+    }
   }
 }
 ::placeholder {

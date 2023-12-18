@@ -1,8 +1,11 @@
+@import "./mixin.scss";
+
 .sidebarRow {
   display: flex;
   align-items: center;
   column-gap: 13px;
   padding: 10px 20px;
+
   &__icon {
     color: #606060;
     font-size: large;
@@ -12,6 +15,14 @@
     font-size: 12px;
     font-weight: 500;
     text-decoration: none;
+    color: #000;
+    font-family: "Mulish-Regular";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    @include for-tablet {
+      display: none;
+    }
   }
 }
 .sidebarRow:hover {

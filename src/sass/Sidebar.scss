@@ -1,7 +1,12 @@
+@import "./mixin.scss";
+
 .sidebar {
   flex: 0.2;
   // position: fixed;
   // background-color: #fff;
+  @include for-tablet {
+    flex: 0;
+  }
 }
 .sidebar > hr {
   height: 1px;

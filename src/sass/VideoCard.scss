@@ -1,13 +1,28 @@
-// .videosCard {
-//   display: grid;
-//   grid-template-columns: repeat(4, 1fr);
-//   gap: 10px;
-//   padding: 0 20px;
-// }
-// img {
-//   width: 100%;
-//   object-fit: cover;
-// }
+@import "./mixin.scss";
+
+.videosCard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 0 20px;
+
+  @include for-tablet {
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+  }
+  &__box {
+    box-shadow: 5px 5px 5px #000;
+    border-radius: 10px;
+  }
+  &__box:hover {
+    transform: scale(1.1);
+  }
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}
 .videoItem {
   position: relative;
   width: 100%;
@@ -21,6 +36,10 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
+  &__box {
+    max-width: 300px;
+    width: 100%;
+  }
 }
 .videoItem {
   position: relative;
@@ -57,7 +76,7 @@
   width: 100%;
   height: 100%;
   position: fixed;
-  top: -245px;
+  top: -285px;
   left: 0;
   display: flex;
   align-items: center;
@@ -85,4 +104,127 @@
   100% {
     width: 100%;
   }
+}
+
+.homeDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.homeDetailVideo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.detailVideo {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+}
+
+.statistics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.statistics p {
+  margin-right: 10px;
+}
+
+.statistics div span {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.statistics div span img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.channels {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.channels div {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.channels div img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.channels div span p {
+  margin: 0;
+}
+
+.homeDetailCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.videoTime {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.videoTime img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.videoTime span {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  padding: 2px 4px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 12px;
+  border-radius: 2px;
+}
+
+.video p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.detailTitles {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #888;
 }

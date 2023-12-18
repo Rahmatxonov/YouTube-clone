@@ -8828,8 +8828,15 @@ react-fast-compare@^3.0.1:
 
 react-icons@^4.12.0:
   version "4.12.0"
-  resolved "https://registry.npmjs.org/react-icons/-/react-icons-4.12.0.tgz"
+  resolved "https://registry.npmmirror.com/react-icons/-/react-icons-4.12.0.tgz#54806159a966961bfd5cdb26e492f4dafd6a8d78"
   integrity sha512-IBaDuHiShdZqmfc/TwHu6+d6k2ltNCf3AszxNmjJc1KUfXdEeRJOKyNvLmAHaarhzGmTSVygNdyu8/opXv2gaw==
+
+react-id-swiper@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npmmirror.com/react-id-swiper/-/react-id-swiper-4.0.0.tgz#eed938c5a4bf464a5cd7316a1bf6778581f47f2f"
+  integrity sha512-BFY8VQYgc1ECkT1Ek6MYSF8MADjWYZctdeRlMA202mjGcdjq1Bugfhg207KHTjGWKWZlY/7/nxFShqQo74RslA==
+  dependencies:
+    object-assign "^4.1.1"
 
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
@@ -8846,10 +8853,10 @@ react-is@^18.0.0, react-is@^18.2.0:
   resolved "https://registry.npmjs.org/react-is/-/react-is-18.2.0.tgz"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
-react-player@^2.13.0:
-  version "2.13.0"
-  resolved "https://registry.npmmirror.com/react-player/-/react-player-2.13.0.tgz#b6fb252bf70574608ac711f6c83d7057c8fb0c14"
-  integrity sha512-gkY7ZdbVFztlKFFhCPcnDrFQm+L399b8fhWsKatZ+b2wpKJwfUHBXQFMRxqYQGT0ic1/wQ7D7EZEWy7ZBqk2pw==
+react-player@^2.14.0:
+  version "2.14.0"
+  resolved "https://registry.npmmirror.com/react-player/-/react-player-2.14.0.tgz#b8fabb2e528ff6fbc39c5e729ca3ad62b9703864"
+  integrity sha512-tUyv6oVD+B+ccJD81GuQQUVU++q3wsMUoDeDsZ0wAivRsmkq0RjERLT79Bi/JDcMwQm3wCwBEzXYbLnCW7c2nQ==
   dependencies:
     deepmerge "^4.0.0"
     load-script "^1.0.0"
@@ -9864,6 +9871,11 @@ svgo@^2.7.0:
     csso "^4.2.0"
     picocolors "^1.0.0"
     stable "^0.1.8"
+
+swiper@^11.0.5:
+  version "11.0.5"
+  resolved "https://registry.npmmirror.com/swiper/-/swiper-11.0.5.tgz#6ed1ad06e6906ba42fd4b93d4988f0626a49046e"
+  integrity sha512-rhCwupqSyRnWrtNzWzemnBLMoyYuoDgGgspAm/8iBD3jCvAWycPLH4Z3TB0O5520DHLzMx94yUMH/B9Efpa48w==
 
 symbol-tree@^3.2.4:
   version "3.2.4"
